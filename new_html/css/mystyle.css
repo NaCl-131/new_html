@@ -1,0 +1,49 @@
+button.click
+{
+
+	border-style: none;
+	height:40px;
+	width: 70px;
+}
+input.search
+{
+	text-align: center;
+	font-size: 20px;	
+	height: 40px;
+	width: 400px;
+	border-style: none;
+	outline: none;
+	/* background-color: #000000; */
+	border:1px solid #000000 ;
+	border-radius: 60px;
+	position: relative;
+	
+	 /* left: 0px ; */
+	 /* right: 5px; */
+	   
+	  /* animation-iteration-count:2; */ 
+}
+div.search_in
+{
+	
+	margin-left: auto;
+	margin-right: auto;	
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 490px;
+}
+img.search_pic
+{
+	width: 250px;
+	height: 110px;
+	position: relative;
+	left:100px;
+}
+@keyframes shake
+{
+	 0% {left: 0px; border-color: red;}
+	25% {left: 5px;border-color: red;}
+	 50% {left: 0px;border-color: red;} 
+	75% {right: 5px;border-color: red;}
+	100% {right: 0px;border-color: red;}
+}
