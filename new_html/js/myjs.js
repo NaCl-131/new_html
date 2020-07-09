@@ -58,6 +58,6 @@ function change() {
 		p.src = "./img/baidu.png";
 		p.style.animation = "PictureChange2 0.2s linear 0s 1";
 		}
-		i = 0;
+		i = 0; 
 	}
 }
