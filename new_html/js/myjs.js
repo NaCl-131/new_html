@@ -1,8 +1,8 @@
 var i = 0;
 
 function search() {
-	var a = document.getElementById("baidu"); //获取输入
-	var G = a.value;
+	var a = document.getElementById("baidu");
+	var G = a.value; //获取输入
 	if (G != false) {
 
 		switch (i) {
@@ -36,13 +36,28 @@ function change() {
 		i++;
 	}
 	if (i == 1) {
-		p.src = "./img/google.png";
+		p.style.animation = "PictureChange 0.2s linear 0s 1";
+		p.addEventListener("animationend", i1);
+		function i1() {
+			p.src = "./img/google.png";
+			p.style.animation = "PictureChange2 0.2s linear 0s 1";
+		}
 	}
 	if (i == 2) {
-		p.src = "./img/bing.png"
+		p.style.animation = "PictureChange 0.2s linear 0s 1";
+		p.addEventListener("animationend", i2);
+		function i2() {
+			p.src = "./img/bing.png";
+			p.style.animation = "PictureChange2 0.2s linear 0s 1";
+		}
 	}
 	if (i == 3) {
-		p.src = "./img/baidu.png"
+		p.style.animation = "PictureChange 0.2s linear 0s 1";
+		p.addEventListener("animationend", i3);
+		function i3() {
+		p.src = "./img/baidu.png";
+		p.style.animation = "PictureChange2 0.2s linear 0s 1";
+		}
 		i = 0;
 	}
 }

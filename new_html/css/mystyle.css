@@ -35,7 +35,15 @@ div.search_in
 img.search_pic
 {
 	width: 250px;
-	height: 110px;
+	height: 100px;
+	position: relative;
+	/* left:100px; */
+	/* animation:PictureChange 0.5s ; */
+}
+div.pic0
+{
+	width: 250px;
+	height: 100px;
 	position: relative;
 	left:100px;
 }
@@ -43,7 +51,20 @@ img.search_pic
 {
 	 0% {left: 0px; border-color: red;}
 	25% {left: 5px;border-color: red;}
-	 50% {left: 0px;border-color: red;} 
+	50% {left: 0px;border-color: red;} 
 	75% {right: 5px;border-color: red;}
 	100% {right: 0px;border-color: red;}
 }
+@keyframes PictureChange{
+/* 	from{width: 250px;height: 100px;}
+	to{	width: 0px;height: 0px;} */
+	form{transform:scale(1);}
+	to{transform:scale(0);}
+}
+@keyframes PictureChange2{
+	/* from{width: 0px;height: 0px;}
+	to{	width: 250px;height: 100px;} */
+	form{width: 0px;height: 0px;}
+	to{transform:scale(1.01);}
+}
+/* scale:中心缩放 */
