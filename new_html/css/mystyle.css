@@ -1,14 +1,19 @@
 button.click
 {
-
+	/* font-size: 20px; */
 	border-style: none;
-	height:40px;
+	height:44px;
 	width: 70px;
+	border-radius: 60px;
+	position: relative;
+	bottom: 2px;
+	border-style: none;
+	/* bottom:下 */
 }
 input.search
 {
 	text-align: center;
-	font-size: 20px;	
+	font-size: 20px;
 	height: 40px;
 	width: 400px;
 	border-style: none;
@@ -56,15 +61,30 @@ div.pic0
 	100% {right: 0px;border-color: red;}
 }
 @keyframes PictureChange{
-/* 	from{width: 250px;height: 100px;}
-	to{	width: 0px;height: 0px;} */
 	form{transform:scale(1);}
 	to{transform:scale(0);}
 }
 @keyframes PictureChange2{
-	/* from{width: 0px;height: 0px;}
-	to{	width: 250px;height: 100px;} */
-	form{width: 0px;height: 0px;}
-	to{transform:scale(1.01);}
+	0% {transform: scale(0);}
+	50% {transform: scale(1);}
+	100% {transform: scale(1.1);}
 }
 /* scale:中心缩放 */
+body
+{
+	background-image: url('https://open.saintic.com/api/bingPic/');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:cover;
+	background-attachment:fixed;
+}
+div.setting
+{
+	width: 54px;
+}
+img.setting
+{
+	width: 50px;
+	height: 50px;
+	position: relative;
+}

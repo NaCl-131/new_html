@@ -55,9 +55,20 @@ function change() {
 		p.style.animation = "PictureChange 0.2s linear 0s 1";
 		p.addEventListener("animationend", i3);
 		function i3() {
-		p.src = "./img/baidu.png";
-		p.style.animation = "PictureChange2 0.2s linear 0s 1";
+			p.src = "./img/baidu.png";
+			p.style.animation = "PictureChange2 0.2s linear 0s 1";
 		}
-		i = 0; 
+		i = 0;
 	}
+}
+function SettingChange()
+{
+	var picture=document.getElementById("Setting");
+	picture.style.opacity="0.5";
+	var s=document.createElement("div");
+}
+function SettingBack()
+{
+	var picture=document.getElementById("Setting");
+	picture.style.opacity="1";
 }

@@ -7,13 +7,17 @@
 		<title>主页</title>
 	</head>
 	<body>
+		<div class="setting">
+			<img src="img/设置%20(2).png" class="setting" id="Setting" onmouseover="SettingChange()" onmouseout="SettingBack()" />
+		</div>
 		<div class="search_in">
 			<div id="pic0" class="pic0">
 				<img src="img/baidu.png" class="search_pic" id="pic" onclick="change()" />
 			</div>
+			<div id="search_inandout">
 			<input type="text" name="百度一下" class="search" id="baidu" onkeydown="enter()" />
-			<button class="click" type="button" onclick="search()">完成</button>
+			<button class="click" type="button" onclick="search()">GO</button>
+			</div>
 		</div>
-
 	</body> 
 </html>
